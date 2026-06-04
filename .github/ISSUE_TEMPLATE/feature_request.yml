@@ -1,0 +1,31 @@
+name: Feature Request
+description: Suggest an improvement for Hamster Checkers.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would this improve?
+      description: Describe the player problem or opportunity.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Suggested solution
+      description: Describe the feature or polish idea.
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - iPhone
+        - iPad
+        - Mac
+        - All platforms
+    validations:
+      required: true

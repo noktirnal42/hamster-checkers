@@ -1,0 +1,52 @@
+name: Game Center Online 2P Help
+description: Get help with Game Center sign-in, matchmaking, Auto-Match, turns, refresh, or resume.
+title: "[Online 2P]: "
+labels:
+  - game-center
+  - support
+body:
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - iPhone
+        - iPad
+        - Mac
+        - Multiple platforms
+    validations:
+      required: true
+  - type: input
+    id: app_version
+    attributes:
+      label: App version and build
+      placeholder: "Example: 1.0.0 (3)"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Online area
+      options:
+        - Game Center sign-in
+        - New Online matchmaker
+        - Auto-Match
+        - Active match list
+        - Refresh
+        - Resume Online
+        - Turn delivery
+        - Match ended unexpectedly
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Include the exact button or screen, whether each device uses a different Game Center Apple ID, and the status message shown in the app.
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: Things already tried
+      placeholder: "Example: confirmed Game Center is signed in, tapped Refresh, relaunched the app."
